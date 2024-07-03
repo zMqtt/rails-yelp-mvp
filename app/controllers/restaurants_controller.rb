@@ -5,15 +5,13 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @restaurant = Restaurant.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @restaurant = Restaurant.new(restaurant_params)

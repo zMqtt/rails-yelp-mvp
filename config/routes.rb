@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'restaurants/:id', to: 'restaurants#show'
 
-  get 'restaurants/new', to: 'restaurants#new'
+  get 'restaurants/new', to: 'restaurants#new', as: 'new_restaurant'
 
   post 'restaurants', to: 'restaurants#create'
 
